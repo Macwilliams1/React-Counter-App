@@ -1,102 +1,79 @@
-import React, { useState } from "react";
-import "./Counter.css";
+[README.md](https://github.com/user-attachments/files/22386277/README.md)
+# React Counter App
 
-function Counter() {
-  const [count, setCount] = useState(0);
-  const limit = 10;
+A simple counter application built with **React 18** and **Vite**.  
+This project demonstrates the use of **functional components** and the **useState hook** for state management.
 
-  const increase = () => {
-    if (count < limit) {
-      setCount(count + 1);
-    }
-  };
+---
 
-  const decrease = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  };
+## 🚀 Features
+- Increase and decrease counter value.
+- Prevents counter from going below zero.
+- Displays a message when the counter reaches the maximum limit (10).
+- Clean UI with basic styling.
 
-  return (
-    <div className="counter-container">
-      <h1>Counter App</h1>
-      <p className="count-value">{count}</p>
-      
-      {count === limit && (
-        <p className="limit-message">🎉 You've reached the limit!</p>
-      )}
+---
 
-      <div className="button-group">
-        <button onClick={increase} className="btn increase">Increase</button>
-        <button onClick={decrease} className="btn decrease">Decrease</button>
-      </div>
-    </div>
-  );
-}
+## 📂 Project Structure
+```
+react-counter-app/
+├── index.html
+├── package.json
+├── vite.config.js
+├── src/
+│   ├── App.jsx
+│   ├── Counter.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── Counter.css
+```
 
-.counter-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  font-family: Arial, sans-serif;
-}
+---
 
-h1 {
-  color: #333;
-}
+## 🛠️ Setup Instructions
 
-.count-value {
-  font-size: 3rem;
-  margin: 20px 0;
-}
+### 1. Clone or extract the project
+```bash
+unzip react-counter-app.zip
+cd react-counter-app
+```
 
-.limit-message {
-  color: red;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+### 2. Install dependencies
+```bash
+npm install
+```
 
-.button-group {
-  display: flex;
-  gap: 15px;
-}
+### 3. Run the development server
+```bash
+npm run dev
+```
 
-.btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s;
-}
+You will see an output similar to:
+```
+VITE v5.2.0  ready in 300 ms
 
-.increase {
-  background-color: #4caf50;
-  color: white;
-}
+  ➜  Local:   http://localhost:5173/
+```
 
-.decrease {
-  background-color: #f44336;
-  color: white;
-}
+### 4. Open in your browser
+Go to [http://localhost:5173/](http://localhost:5173/) to view the app.
 
-.btn:hover {
-  opacity: 0.8;
-}
+---
 
-import React from "react";
-import Counter from "./Counter";
+## 📌 Requirements
+- Node.js v16+  
+- npm v8+  
 
-function App() {
-  return (
-    <main>
-      <Counter />
-    </main>
-  );
-}
+---
 
-export default App;
+## 🎯 Example Behavior
+- Initial counter value = `0`  
+- Clicking **Increase** increments the counter until it reaches `10`.  
+- Clicking **Decrease** decrements the counter but not below `0`.  
+- When the counter hits `10`, it shows:  
+  > 🎉 You've reached the limit!
 
+---
 
-export default Counter;
+## 📄 License
+This project is for learning purposes. Free to use and modify.
