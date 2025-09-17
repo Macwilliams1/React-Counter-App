@@ -6,7 +6,7 @@ This project demonstrates the use of **functional components** and the **useStat
 
 ---
 
-## 🚀 Features
+##  Features
 - Increase and decrease counter value.
 - Prevents counter from going below zero.
 - Displays a message when the counter reaches the maximum limit (10).
@@ -14,7 +14,7 @@ This project demonstrates the use of **functional components** and the **useStat
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 react-counter-app/
 ├── index.html
@@ -30,7 +30,7 @@ react-counter-app/
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone or extract the project
 ```bash
@@ -60,20 +60,20 @@ Go to [http://localhost:5173/](http://localhost:5173/) to view the app.
 
 ---
 
-## 📌 Requirements
+##  Requirements
 - Node.js v16+  
 - npm v8+  
 
 ---
 
-## 🎯 Example Behavior
+##  Example Behavior
 - Initial counter value = `0`  
 - Clicking **Increase** increments the counter until it reaches `10`.  
 - Clicking **Decrease** decrements the counter but not below `0`.  
 - When the counter hits `10`, it shows:  
-  > 🎉 You've reached the limit!
+  >  You've reached the limit!
 
 ---
 
-## 📄 License
+##  License
 This project is for learning purposes. Free to use and modify.
